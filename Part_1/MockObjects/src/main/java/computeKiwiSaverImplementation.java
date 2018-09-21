@@ -4,8 +4,17 @@ public class computeKiwiSaverImplementation implements IcomputeKiwiSaver {
 	IcomputeKiwiSaver obj;
 
 	public int computeKiwiSaver(Employee kiwiOption) {
-		// TODO Auto-generated method stub
-		
+		return obj.computeKiwiSaver(kiwiOption);
 	}
+
+	public IcomputeKiwiSaver getObj() {
+		return obj;
+	}
+
+	public void setObj(IcomputeKiwiSaver obj) {
+		this.obj = obj;
+	}
+	
+	
 
 }
