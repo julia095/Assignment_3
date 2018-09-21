@@ -29,5 +29,6 @@ public class weeklySalaryImplementationTest {
 	public void testWeeklySalary() {
 		assertEquals((employee.income/52),obj.weeklySalary(employee));
 	}
-
+	
+	
 }
