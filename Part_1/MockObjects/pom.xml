@@ -3,8 +3,6 @@
   <groupId>com.assignment3.part1</groupId>
   <artifactId>MockObjects</artifactId>
   <version>0.0.1-SNAPSHOT</version>
- 
- 
 <dependencies>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
@@ -29,7 +27,5 @@
 		    <version>1.3</version>
 		    <scope>test</scope>
 		</dependency>
-		
-
 </dependencies>
 </project>
