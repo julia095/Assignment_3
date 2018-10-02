@@ -5,25 +5,20 @@ package bookShop;
 
 import static org.junit.Assert.*;
 
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 public class totalPriceTest {
+	
+	public book book1;
+	public order order1;
+	public int expected;
 
-	private Book book1;
-	private Book book2;
-	private Book book3;
-	private order order1;
-	
-	
-	
 	@Before
 	public void setUp() throws Exception {
-		Book book1 = new Book(1, "Name1", 20.5);
-		Book book2 = new Book(2, "Name2", 40.5);
-		Book book3 = new Book(3, "Name3", 20.4);
-		
+						
 	}
 
 	@After
@@ -32,9 +27,10 @@ public class totalPriceTest {
 
 	@Test
 	public void testTotalPrice() {
-		double expected = book1.Price*order1.getCount(book1)+book2.Price*order1.getCount(book2);
-		double actual = order1.TotalPrice(book1,book2,book3);
-		assertEquals(expected, actual, 0.01);
+		book book1 = new book(1,"Title_of_the_book",45);
+		order order1 = new order(1,5);
+		int expected = 5*45;		
+		assertEquals(expected, order1.totalPrice(order1.book_quantity,book1.book_price),0.1);
 		//fail("Not yet implemented");
 	}
 

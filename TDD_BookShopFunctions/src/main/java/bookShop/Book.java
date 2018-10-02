@@ -1,17 +1,18 @@
 package bookShop;
 
-public class Book {
+public class book {
 	
-	int Number;
-	String Name;
-	Double Price;
+	public int book_id;
 	
-	public Book(int number, String name, Double price) {
+	public String book_title;
+	public int book_price; 
+	
+	public book(int book_id, String book_title, int book_price) {
 		super();
-		Number = number;
-		Name = name;
-		Price = price;
+		this.book_id = book_id;
+		this.book_title = book_title;
+		this.book_price = book_price;
 	}
 	
-
+	
 }

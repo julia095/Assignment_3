@@ -1,17 +1,18 @@
 package bookShop;
 
 public class order {
+	public int order_id;
+	public int book_quantity;
 	
-	
-
-	public static double TotalPrice(Object book1, Object book2, Object book3) {
-		return price;
+	public order(int order_id, int book_quantity) {
+		super();
+		this.order_id = order_id;
+		this.book_quantity = book_quantity;
 	}
 
-	
-	public Double getCount(Book book1) {
-		// TODO Auto-generated method stub
-		return null;
+	public double totalPrice(int book_quantity, int book_price) {
+		
+		return book_quantity*book_price;
 	}
 
 }
